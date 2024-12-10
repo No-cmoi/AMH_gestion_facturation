@@ -1,0 +1,23 @@
+# Fichiers binaires et dossiers temporaires
+bin/
+obj/
+packages/
+
+# IDE spécifiques
+riderModule.iml
+_ReSharper.Caches/
+
+# Fichiers sensibles
+appsettings.json
+appsettings.*.json
+*.pfx
+*.key
+.env
+
+# Logs
+logs/
+*.log
+
+# Fichiers utilisateur
+*.csproj.user
+*.suo
