@@ -31,4 +31,6 @@ public class Company
     public string VATMessage { get; set; }
 
     public ICollection<Quote> Quotes { get; set; }
+    public ICollection<Invoice> Invoices { get; set; }
+    public ICollection<ActivityLog> ActivityLogs { get; set; }
 }

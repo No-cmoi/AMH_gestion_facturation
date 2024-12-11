@@ -12,4 +12,7 @@ public class Product
     public decimal Price { get; set; }
     public decimal TaxRate { get; set; }
     public bool IsActive { get; set; }
+
+    public ICollection<QuoteDetail> QuoteDetails { get; set; }
+    public ICollection<InvoiceDetail> InvoiceDetails { get; set; }
 }

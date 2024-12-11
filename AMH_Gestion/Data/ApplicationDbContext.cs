@@ -15,5 +15,5 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Client> Clients { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Quote> Quotes { get; set; }
-    
+    public DbSet<Invoice> Invoices { get; set; }
 }

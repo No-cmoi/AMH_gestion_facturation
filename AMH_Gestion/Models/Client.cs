@@ -37,5 +37,6 @@ public class Client
     public DateTime DateCreated { get; set; }
 
     public ICollection<Quote> Quotes { get; set; }
+    public ICollection<Invoice> Invoices { get; set; }
     
 }
