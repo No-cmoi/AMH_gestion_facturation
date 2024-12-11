@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace AMH_Gestion.Models;
 
 public class QuoteDetail
 {
+    [Key]
     public int Id { get; set; }
     public int QuoteId { get; set; }
     public int ProductId { get; set; }

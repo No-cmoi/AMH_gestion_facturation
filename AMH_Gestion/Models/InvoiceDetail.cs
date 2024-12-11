@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace AMH_Gestion.Models;
 
 public class InvoiceDetail
 {
+    [Key]
     public int Id { get; set; }
     public int InvoiceId { get; set; }
     public int ProductId { get; set; }

@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace AMH_Gestion.Models;
 
 public class Invoice
 {
+    [Key]
     public int Id { get; set; }
     public string Number { get; set; }
     public DateTime DateIssued { get; set; }

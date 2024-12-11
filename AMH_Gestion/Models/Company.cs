@@ -25,12 +25,14 @@ public class Company
     [Required(ErrorMessage = "Company email is required")]
     [DataType(DataType.EmailAddress)]
     public string Email { get; set; }
+
+    public string SiretNumber { get; set; }
     public string LegalStatus { get; set; }
     public string TaxRegime { get; set; }
-    public bool IsPayingVAT { get; set; }
+    public bool? IsPayingVAT { get; set; }
     public string VATMessage { get; set; }
 
-    public ICollection<Quote> Quotes { get; set; }
-    public ICollection<Invoice> Invoices { get; set; }
-    public ICollection<ActivityLog> ActivityLogs { get; set; }
+    public ICollection<Quote>? Quotes { get; set; }
+    public ICollection<Invoice>? Invoices { get; set; }
+    public ICollection<ActivityLog>? ActivityLogs { get; set; }
 }
