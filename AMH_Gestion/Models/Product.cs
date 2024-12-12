@@ -13,6 +13,6 @@ public class Product
     public decimal TaxRate { get; set; }
     public bool IsActive { get; set; }
 
-    public ICollection<QuoteDetail> QuoteDetails { get; set; }
-    public ICollection<InvoiceDetail> InvoiceDetails { get; set; }
+    public ICollection<QuoteDetail>? QuoteDetails { get; set; }
+    public ICollection<InvoiceDetail>? InvoiceDetails { get; set; }
 }

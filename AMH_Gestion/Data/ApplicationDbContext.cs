@@ -1,4 +1,4 @@
-﻿using AMH_Gestion.Models;
+using AMH_Gestion.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,4 +16,6 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Quote> Quotes { get; set; }
     public DbSet<Invoice> Invoices { get; set; }
+
+public DbSet<AMH_Gestion.Models.QuoteDetail> QuoteDetail { get; set; } = default!;
 }

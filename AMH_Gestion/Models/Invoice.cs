@@ -17,6 +17,6 @@ public class Invoice
     public int CompanyId { get; set; }
     public int QuoteId { get; set; }
 
-    public ICollection<InvoiceDetail> InvoiceDetails { get; set; }
+    public ICollection<InvoiceDetail>? InvoiceDetails { get; set; }
     
 }

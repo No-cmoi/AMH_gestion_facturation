@@ -17,6 +17,6 @@ public class Quote
     public int ClientId { get; set; }
     public int CompanyId { get; set; }
 
-    public ICollection<Invoice> Invoices { get; set; }
-    public ICollection<QuoteDetail> QuoteDetails { get; set; }
+    public ICollection<Invoice>? Invoices { get; set; }
+    public ICollection<QuoteDetail>? QuoteDetails { get; set; }
 }

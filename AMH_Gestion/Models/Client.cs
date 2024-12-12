@@ -36,7 +36,7 @@ public class Client
     [DataType(DataType.DateTime)]
     public DateTime DateCreated { get; set; }
 
-    public ICollection<Quote> Quotes { get; set; }
-    public ICollection<Invoice> Invoices { get; set; }
+    public ICollection<Quote>? Quotes { get; set; }
+    public ICollection<Invoice>? Invoices { get; set; }
     
 }
